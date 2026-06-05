@@ -17,13 +17,11 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
 td, th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
 }
-
 tr:nth-child(even) {
   background-color: #008000;
 }
@@ -34,8 +32,6 @@ tr:nth-child(odd) {
 </head>
 <body>
 <a href="#maincontent">Skip to main content</a>
-<main id="maincontent">
-
     <h1 style="color:darkblue;">Resource Fair Planning Guide</h1>
     <img src="image_with_guide.jpg" alt="Wood Background with Scrabble tiles scattered on surface with GUIDE spelled out and standing on the wood">
     <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The <strong>Crater Health District (CHD)</strong>, in partnership with local governments, schools, healthcare providers, and community-based organizations, puts on large-scale community health and resource fairs across the localities of <em>Petersburg, Hopewell, Greensville/Emporia, Surry, Dinwiddie, Sussex, and Prince George County</em>. These events are designed to provide accessible health services, connect residents to social support resources, and promote community resilience in underserved areas. Services include onsite immunizations, health screenings, food distribution, safety education, family activities, and vendor engagement. Each event is tailored to the specific needs of its host locality and aligned with identified health priorities.</p> 
@@ -133,10 +129,9 @@ tr:nth-child(odd) {
   <li>Finance Lead</li>
   <li>Parking Lead</li>
 </ol>
-
-<caption>Planning Timeline Tracker</caption>
 <table>
-  <tr>
+<caption>Planning Timeline Tracker</caption>
+    <tr>
     <th scope="col">Timeframe</th>
     <th scope="col">Key Tasks</th>
     <th scope="col">Lead(s)/Owner(s)</th>
@@ -179,29 +174,35 @@ tr:nth-child(odd) {
     <td>(Not Started, In Progress, Pending, Complete)</td>
   </tr>
 </table>
-
 <p>If you are interested in receiving a downloadable copy of this guide, please click the checkbox below and fill out the form by clicking or tabbing in the form:</p>
-<input type="checkbox" name="Receive Copy of This Guide" id="Receive Copy of This Guide">
+<input type="checkbox" name="Receive Copy of This Guide" id="ReceiveCopyofThisGuide">
 <label for="Receive Copy of This Guide">Receive Copy of This Guide</label>
-
 <form>
-<label for="name">Name: </label><br>
-<input id="name" name="name" type="text" /><br>
+<form>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </div>
 
-<label for="email">Email: </label><br>
-<input id="email" name="email" type="email" /><br>
+  <div class="form-group"
+      <label for="tel">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+  <small>Format: 123-456-7890</small
+  </div>
+    
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </div>
 
-<label for="phone number">Phone Number: </label><br>
-<input id="phone number" name="phone number" type="text" />
+  <button type="submit">Submit</button>
 </form>
 
+</form>
 <img src="resource_fair.jpg"
      alt="Resource Fair with tents, tables, and people mingling" style="width:100%;height:auto;">
-
 <p id="description">
    An aerial view of a busy outdoor health and resource fair shows multiple white canopy tents arranged in rows along a paved courtyard. Attendees of various ages are gathered throughout the event, visiting booths, speaking with vendors, and collecting information. The booths represent community organizations and service providers sharing health, wellness, educational, and support resources. The fair is situated next to a large building and surrounded by mature trees and greenery, creating an open and inviting environment. The scene conveys active community participation, access to resources, and opportunities for health education, outreach, and connection among attendees and local organizations.
-
 </p>
-    
 </body>
 </html>
